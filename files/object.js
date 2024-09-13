@@ -17,3 +17,6 @@ obj.greeting = function() {
 obj.greeting()
 
 const tinderUser = new Object()
+
+const obj3 = Object.assign({}, obj1, obj2)
+console.log(obj3);
