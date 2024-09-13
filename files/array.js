@@ -1,6 +1,8 @@
-array = Object(1, 2, 3);
+const array = Array(1, 2, 3);
 
 array.unshift(9)
-print(array)
-array.shift()
-print(array)
+console.log(array)
+
+
+array.shift();
+console.log(array);
