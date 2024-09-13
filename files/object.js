@@ -24,3 +24,6 @@ console.log(obj3);
 obj3 = {...obj1, ...obj2}
 console.log(obj3);
 
+console.log(Object.keys(tinderUser));
+console.log(Object.values (tinderUser));
+
