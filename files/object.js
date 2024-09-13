@@ -9,3 +9,7 @@ const obj = {
 };
 
 console.log(obj.key1, obj["key2"], obj[ageSymbol])
+
+obj,greeting = function() {
+    console.log("Hello!");
+}
