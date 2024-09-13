@@ -11,3 +11,5 @@ console.log(array);
 
 console.log(array.join(" "))
 
+const another_array = [1, [2, 3, 14, 5, 6], 7, [6, 7, [4, 5]]]
+console.log(another_array.flat(2))
