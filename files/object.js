@@ -15,3 +15,5 @@ obj.greeting = function() {
 }
 
 obj.greeting()
+
+const tinderUser = new Object()
