@@ -10,6 +10,8 @@ const obj = {
 
 console.log(obj.key1, obj["key2"], obj[ageSymbol])
 
-obj,greeting = function() {
-    console.log("Hello!");
+obj.greeting = function() {
+    console.log(`Hello! This is the value of ${this.key1}`);
 }
+
+obj.greeting()
