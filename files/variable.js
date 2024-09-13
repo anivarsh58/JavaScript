@@ -5,3 +5,4 @@ whyy = "Nigga";
 
 console.log(CONST);
 console.log(whyy);
+

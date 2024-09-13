@@ -1,0 +1,1 @@
+array = Object(1, 2, 3);
