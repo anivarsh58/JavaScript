@@ -13,4 +13,4 @@ const chai = () => {
 
 chai()
 
-const addTwo = (num1, num2) => num1 + num2
+const addTwo = (num1, num2) => ({a : num1, b : num2})
