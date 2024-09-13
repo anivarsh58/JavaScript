@@ -14,3 +14,7 @@ const chai = () => {
 chai()
 
 const addTwo = (num1, num2) => ({a : num1, b : num2})
+
+(() => {
+    console.log("IIFE")
+})()
