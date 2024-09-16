@@ -1,14 +1,14 @@
 function calculateCartPrice(vall, val2, ...num1) {
+    console.log(this.val2)
     return num1
 }
-    console.log(calculateCartPrice(200, 400,
-    500, 2000))
+console.log(calculateCartPrice(200, 400, 500, 2000))
 
 
 const chai = () => {
     let username = "Tanishq";
     console.log(this) // won't work in arrow functions
-    console.log(this.username)
+    console.log(username)
 }
 
 chai()
