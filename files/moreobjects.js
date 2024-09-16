@@ -17,12 +17,16 @@ for (const [key, value] of hashmap)
     console.log(`${key} : ${value}`);
 }
 
-object = {3 : 9,
-    1 : 1,
-    4: 16
+object = {hello : 9,
+    okay : 1,
+    no: 16
 }
 
-for (const [key, value] in object) {
-    console.log(key, " ", object[key]);
+// console.log(object.3); Can't access properties that begin with a number using dot-notation.
+
+for (const key in object) {
+    console.log(key, " ", object.key);
 }
+
+// the above loop treats array as an object with the indices being the keys
 
