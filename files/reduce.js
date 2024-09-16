@@ -10,3 +10,5 @@ console.log(myNums.reduce((accumulator, currentValue) => {
 }, 0))
 
 console.log(myNums.reduce((accumulator, currentValue) => (accumulator + currentValue), 0))
+
+
