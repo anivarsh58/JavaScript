@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: #212121;
+            color: #FFF;
+        }
+        button
+        {
+            background-color: blue;
+            color:aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Learning Asynchronous JS.</h1>
+    <button id = 'start'>
+        Start
+    </button>
+    <button id = 'stop'>
+        Stop
+    </button>
+</body>
+<script>
+    const changeHeading = () => {
+        document.querySelector('h1').innerHTML = "Changed Heading";
+    }
+    
+    document.getElementById('start').addEventListener('click',
+    (event) =>
+    {
+        let reference = setTimeout(changeHeading, 3000);
+    });
+
+    document.getElementById('stop').addEventListener('click',
+    (event) =>
+    {   
+        console.log(reference);
+        clearTimeout(reference);
+    });
+    
+</script>
+</html>
