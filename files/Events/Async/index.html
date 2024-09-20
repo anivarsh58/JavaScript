@@ -25,6 +25,8 @@
     </button>
 </body>
 <script>
+    let reference;
+
     const changeHeading = () => {
         document.querySelector('h1').innerHTML = "Changed Heading";
     }
@@ -32,7 +34,7 @@
     document.getElementById('start').addEventListener('click',
     (event) =>
     {
-        let reference = setTimeout(changeHeading, 3000);
+        reference = setTimeout(changeHeading, 3000);
     });
 
     document.getElementById('stop').addEventListener('click',
