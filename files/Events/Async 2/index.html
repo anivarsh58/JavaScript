@@ -25,8 +25,11 @@
     }
 
     document.querySelector("#start").addEventListener('click', (event) =>
-    {
+    {   
+        if (!ID)
+        {
         ID = setInterval(changeBGC, 1000);
+        }
     })
 
     document.querySelector("#stop").addEventListener('click', (event) =>
