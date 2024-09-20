@@ -12,11 +12,21 @@
     
 </body>
 <script>
-    document.getElementById("owl").onClick = function()
-    {
-        alert("Owl.");
+    // document.getElementById("owl").onClick = function()
+    // {
+    //     alert("Owl.");
 
-        // type, timestamp, defaultPrevented, target, toElement, srcElement, currentTarget, clientX, clientY
-    }
+    //     // type, timestamp, defaultPrevented, target, toElement, srcElement, currentTarget, clientX, clientY
+    // }
+
+    document.getElementById("owl").addEventListener('click', function()
+{
+    console.log(e)
+}, false);
+
+// false, true changes the order of propagation (inside -> outside) or (outside -> inside)
+// e.preventDefault(), e.stopPropagation()
+
+
 </script>
 </html>
