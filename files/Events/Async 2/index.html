@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <button id = "start">Start</button>
+    <button id = "stop">Stop</button>
+</body>
+<script>
+    let color = "#";
+    const values = "1234567890ABCDEF";
+
+    let ID;
+
+    const changeBGC = () =>
+    {   
+        color = "#";
+        for (let i = 0; i < 6; i++)
+        {
+            color += values[Math.floor(Math.random() * 16)];
+        }
+        document.querySelector('body').style.backgroundColor = color;
+    }
+
+    document.querySelector("#start").addEventListener('click', (event) =>
+    {
+        ID = setInterval(changeBGC, 1000);
+    })
+
+    document.querySelector("#stop").addEventListener('click', (event) =>
+    {
+        clearInterval(ID);
+    })
+
+
+</script>
+</html>
