@@ -30,12 +30,12 @@
         {
             ID = setInterval(changeBGC, 1000);
         }
-        ID = null;
     })
 
     document.querySelector("#stop").addEventListener('click', (event) =>
     {
         clearInterval(ID);
+        ID = null;
     })
 
 
