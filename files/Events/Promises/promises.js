@@ -20,6 +20,6 @@ const promiseTwo = new Promise(function(resolve, reject)
     }, 1000);
 });
 
-promiseTwo.then(function(username, password) {
+promiseTwo.then(function(user) {
     console.log(username, password);
 });
