@@ -69,7 +69,14 @@ const promiseFour = new Promise(function(resolve, reject)
     }
 });
 
+
 async function consumePromiseFour() {
+try{
    const response = await promiseFive;
    console.log(response);
 }
+catch (error)
+{
+
+}
+};
