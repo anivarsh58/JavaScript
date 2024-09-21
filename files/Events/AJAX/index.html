@@ -10,7 +10,7 @@
     let request = new XMLHttpRequest();
     request.onreadystatechange = () =>
     {
-        console.log();
+        console.log(request.readyState);
     }
     request.open('GET', 'https://api.github.com/users/anivarsh58');
     request.send();
