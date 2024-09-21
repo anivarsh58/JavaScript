@@ -98,9 +98,10 @@ async function getAllUsers()
     {
         let response = await fetch('https://jsonplaceholder.typicode.com/users');
         console.log(response)
-    } catch (error)
+    }
+    catch (error)
     {
-        
+        console.log(error);
     }
 }
 
