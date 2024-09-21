@@ -71,6 +71,9 @@ const promiseFour = new Promise(function(resolve, reject)
     }
 });
 
+//  If you reach an await expression and the Promise has already been resolved (or rejected),
+// the await will immediately continue with the resolved value or throw the error, respectively.
+
 
 async function consumePromiseFour() {
 try{
