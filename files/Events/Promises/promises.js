@@ -12,4 +12,7 @@ promise.then(function()
     console.log("Promise consumed.");
 })
 
+const promiseTwo = new Promise(function(resolve, reject)
+{
 
+});
