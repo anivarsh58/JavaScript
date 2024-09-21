@@ -21,5 +21,5 @@ const promiseTwo = new Promise(function(resolve, reject)
 });
 
 promiseTwo.then(function(user) {
-    console.log(username, password);
+    console.log(user.username, user.password);
 });
