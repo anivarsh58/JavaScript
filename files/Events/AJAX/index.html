@@ -8,10 +8,15 @@
 </body>
 <script>
     let request = new XMLHttpRequest();
-    request.onreadystatechange = () =>
+    const onreadystatechang = () =>
     {
-        console.log(request.readyState);
+        console.log(this.readyState);
+        if (this.readyState === 4)
+        {
+            console.log(JSON.parse(responseText));
+        }
     }
+    request.onreadystatechange = onreadystatechang;
     request.open('GET', 'https://api.github.com/users/anivarsh58');
     request.send();
 
