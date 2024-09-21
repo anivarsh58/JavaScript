@@ -41,16 +41,16 @@
 //     }
 // });
 
-promiseThree.then((user) => {
-    console.log(user.username, user.fullName);
-    return user.username
-}).then((username) => 
-{
-    console.log(username)
-}).catch((error) => console.log(error))
-.finally(() => {
-    console.log("The issue has either been resolved or rejected.");
-});
+// promiseThree.then((user) => {
+//     console.log(user.username, user.fullName);
+//     return user.username
+// }).then((username) => 
+// {
+//     console.log(username)
+// }).catch((error) => console.log(error))
+// .finally(() => {
+//     console.log("The issue has either been resolved or rejected.");
+// });
 
 const promiseFour = new Promise(function(resolve, reject)
 {
