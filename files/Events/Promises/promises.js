@@ -23,3 +23,31 @@ const promiseTwo = new Promise(function(resolve, reject)
 promiseTwo.then(function(user) {
     console.log(user.username, user.password);
 });
+
+const promiseThree = new Promise(function(resolve, reject)
+{
+    let error = true;
+    if (!error)
+    {
+        setTimeout(function ()
+    {
+        console.log("Async function.");
+        resolve({username : "anivarsh58", fullName : "Tanishq Varshney"});
+    }, 1000);
+    }
+    else
+    {
+        reject("ERROR!");
+    }
+});
+
+promiseThree.then((user) => {
+    console.log(user.username, user.password);
+    return user.username
+}).then((username) => 
+{
+    console.log(username)
+}).catch((error) => console.log(error))
+.finally(() => {
+    console.log("The issue has either been resolved or rejected.");
+});
