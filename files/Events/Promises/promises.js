@@ -26,7 +26,7 @@ promiseTwo.then(function(user) {
 
 const promiseThree = new Promise(function(resolve, reject)
 {
-    let error = true;
+    let error = false;
     if (!error)
     {
         setTimeout(function ()
@@ -42,7 +42,7 @@ const promiseThree = new Promise(function(resolve, reject)
 });
 
 promiseThree.then((user) => {
-    console.log(user.username, user.password);
+    console.log(user.username, user.fullName);
     return user.username
 }).then((username) => 
 {
@@ -51,3 +51,5 @@ promiseThree.then((user) => {
 .finally(() => {
     console.log("The issue has either been resolved or rejected.");
 });
+
+const promiseFour = 
