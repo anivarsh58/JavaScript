@@ -54,5 +54,18 @@ promiseThree.then((user) => {
 
 const promiseFour = new Promise(function(resolve, reject)
 {
-    
+    let error = false;
+    if (!error)
+    {
+        setTimeout(function ()
+    {
+        console.log("Async function.");
+        resolve({username : "anivarsh58", fullName : "Tanishq Varshney"});
+    }, 1000);
+    }
+    else
+    {
+        reject("ERROR!");
+    }
 });
+
