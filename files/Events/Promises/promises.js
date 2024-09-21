@@ -2,8 +2,9 @@ const promise = new Promise(function(resolve, reject) {
 
     setTimeout(function() {
         console.log("Asynchronous code is executed.");
+        resolve();
     }, 1000);
-    resolve();
+    
 });
 
 promise.then(function()
