@@ -52,4 +52,7 @@ promiseThree.then((user) => {
     console.log("The issue has either been resolved or rejected.");
 });
 
-const promiseFour = 
+const promiseFour = new Promise(function(resolve, reject)
+{
+    
+});
