@@ -1,45 +1,45 @@
-const promise = new Promise(function(resolve, reject) {
+// const promise = new Promise(function(resolve, reject) {
 
-    setTimeout(function() {
-        console.log("Asynchronous code is executed.");
-        resolve();
-    }, 1000);
+//     setTimeout(function() {
+//         console.log("Asynchronous code is executed.");
+//         resolve();
+//     }, 1000);
     
-});
+// });
 
-promise.then(function()
-{
-    console.log("Promise consumed.");
-})
+// promise.then(function()
+// {
+//     console.log("Promise consumed.");
+// })
 
-const promiseTwo = new Promise(function(resolve, reject)
-{
-    setTimeout(function() {
-        console.log("Asynchronous code is executed.");
-        resolve({username : "Chai", password : "Okay"});
-    }, 1000);
-});
+// const promiseTwo = new Promise(function(resolve, reject)
+// {
+//     setTimeout(function() {
+//         console.log("Asynchronous code is executed.");
+//         resolve({username : "Chai", password : "Okay"});
+//     }, 1000);
+// });
 
-promiseTwo.then(function(user) {
-    console.log(user.username, user.password);
-});
+// promiseTwo.then(function(user) {
+//     console.log(user.username, user.password);
+// });
 
-const promiseThree = new Promise(function(resolve, reject)
-{
-    let error = false;
-    if (!error)
-    {
-        setTimeout(function ()
-    {
-        console.log("Async function.");
-        resolve({username : "anivarsh58", fullName : "Tanishq Varshney"});
-    }, 1000);
-    }
-    else
-    {
-        reject("ERROR!");
-    }
-});
+// const promiseThree = new Promise(function(resolve, reject)
+// {
+//     let error = false;
+//     if (!error)
+//     {
+//         setTimeout(function ()
+//     {
+//         console.log("Async function.");
+//         resolve({username : "anivarsh58", fullName : "Tanishq Varshney"});
+//     }, 1000);
+//     }
+//     else
+//     {
+//         reject("ERROR!");
+//     }
+// });
 
 promiseThree.then((user) => {
     console.log(user.username, user.fullName);
