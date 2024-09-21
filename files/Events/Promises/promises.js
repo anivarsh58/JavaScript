@@ -71,4 +71,5 @@ const promiseFour = new Promise(function(resolve, reject)
 
 async function consumePromiseFour() {
    const response = await promiseFive;
+   console.log(response);
 }
