@@ -12,4 +12,4 @@ console.log(print.prototype); // returns the implicit this of function + the bui
 function createUser (username, score){
     this.username = username;
     this.score = score;
-}
+};
