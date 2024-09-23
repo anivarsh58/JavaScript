@@ -9,5 +9,5 @@ function createUser(username, email, password)
     this.email = email;
     this.password = password;
 
-    setUsername(this, username)
+    setUsername.call(this, username)
 }
