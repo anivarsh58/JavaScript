@@ -7,5 +7,9 @@ class User
         this.email = email
     }
 
+    encryptPassword()
+    {
+        return `${this.password}abc`
+    }
     
 }
