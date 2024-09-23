@@ -13,3 +13,12 @@ class User
     }
     
 }
+
+class Teacher extends User
+{
+    constructor(username, password, email)
+    {
+        super(username, password, email);
+        
+    }
+}
