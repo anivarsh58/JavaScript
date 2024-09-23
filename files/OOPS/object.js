@@ -25,3 +25,5 @@ const tea = createUser("tea", 250);
 /* With new: It’s a constructor call, creating a new object and linking it to the prototype.
 Without new: It’s just a regular function call, where this refers to the global object
 (or undefined in strict mode), and no new object is created. */
+
+/* https://chatgpt.com/share/66f0dd26-bd38-8005-b7e9-f62756ba0d8e */
