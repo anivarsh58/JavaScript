@@ -5,7 +5,9 @@ class User
         this.username = username
     }
 
-    encryptPassword()
+    // static keyword makes the function private
+
+    static encryptPassword()
     {
         return `${this.password}abc`
     }
