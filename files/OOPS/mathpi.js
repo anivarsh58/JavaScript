@@ -14,3 +14,5 @@ Object.defineProperty(chai, 'name', {
     writable: false,
     enumerable: true,
 });
+
+console.log(Object.getOwnPropertyDescriptor(chai, "name"));
