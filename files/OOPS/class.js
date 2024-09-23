@@ -1,10 +1,8 @@
 class User
 {
-    constructor(username, passowrd, email)
+    constructor(username)
     {
         this.username = username
-        this.password = password
-        this.email = email
     }
 
     encryptPassword()
@@ -18,7 +16,9 @@ class Teacher extends User
 {
     constructor(username, password, email)
     {
-        super(username, password, email);
-        
+        super(username);
+        this.password = password
+        this.email = email
+
     }
 }
