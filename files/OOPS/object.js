@@ -19,6 +19,10 @@ createUser.prototype.increment = function()
     this.score++;
 }
 
+Object.prototype.newFunction = function() {
+    console.log("We did it.")
+}
+
 const chai = new createUser ("chai", 25);
 const tea = createUser("tea", 250);
 
