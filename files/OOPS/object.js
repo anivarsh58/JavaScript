@@ -21,3 +21,7 @@ createUser.prototype.increment = function()
 
 const chai = new createUser ("chai", 25);
 const tea = createUser("tea", 250);
+
+/* With new: It’s a constructor call, creating a new object and linking it to the prototype.
+Without new: It’s just a regular function call, where this refers to the global object
+(or undefined in strict mode), and no new object is created. */
