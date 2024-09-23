@@ -1,10 +1,17 @@
-const person = {
-    name: 'Tanishq',
-    greet: function(greeting) {
-      console.log(`${greeting}, my name is ${this.name}`);
+class React {
+    constructor() {
+      this.library = "React";
+      this.server = "https://localhost:300";
+      
+      // requirement
+      document
+        .querySelector('button')
+        .addEventListener('click', this.handleClick.bind(this));
     }
-  };
   
-  const greetPerson = person.greet.bind(person, 'Hello');
-  greetPerson();  // Output: Hello, my name is Tanishq
+    handleClick() {
+      console.log("button clicked");
+      console.log(this.server);
+    }
+  }
   
